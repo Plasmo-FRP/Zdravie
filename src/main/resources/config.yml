@@ -1,0 +1,46 @@
+
+timer-update-time: 90 #ticks
+
+fracture:
+  enabled: true
+  min-block: 8
+  effect-time: 1200 #ticks
+  effect: SLOW
+  message-enabled: true
+  message: "нога сломалась"
+
+cavePressure:
+  enabled: true
+  message-enabled: true
+  message: "#F9C74FВы чуствуете слабость"
+  main-pressure-effect: UNLUCK
+  Y-Level: 15
+  effects:
+    HUNGER:
+      amplifier: 1
+    WEAKNESS:
+      amplifier: 0
+
+rawFood:
+  enabled: true
+  message-enabled: true
+  message: "отравление"
+  items:
+    - APPLE
+    - CARROT
+
+mealActions:
+  enabled: true
+  items:
+    omar:
+      message: "OKAY"
+      hearts-heal: 5
+      receive-items:
+        golden_key:
+          amount: 1
+          chance: 50
+      effects:
+        slow:
+          chance: 50
+          amplifier: 2
+          duration: 600

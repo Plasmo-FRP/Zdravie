@@ -1,0 +1,6 @@
+name: Zdravie
+version: '${project.version}'
+main: com.venterok.zdravie.Zdravie
+api-version: 1.17
+authors: [ Venterok ]
+description: Player health
